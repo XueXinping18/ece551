@@ -1,0 +1,15 @@
+input1.txt
+input1.txt input1.txt
+112
+
+'input1.txt'
+noexist
+input2.txt
+input3.txt
+input4.txt
+input5.txt
+input1.txt input6.txt
+input6.txt
+input7.txt 
+input8.txt
+input8_with_ff_misinterpreted_as_EOF.txt

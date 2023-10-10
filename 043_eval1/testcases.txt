@@ -1,0 +1,32 @@
+#error
+printSsPeriod invalid1 7
+printFilteredSsData sunspots_data.csv 12
+printSsData nonfile.csv
+printSsData invalid1.csv
+printSsData invalid2.csv
+printSsData invalid3.csv
+printSsData invalid4.csv
+printSsData invalid5.csv
+printSsData invalid6.csv
+printSsData invalid7.csv
+printSsData invalid8.csv
+printSsData invalid9.csv
+printSsData invalid10.csv
+printSsData invalid11.csv
+printSsData invalid12.csv
+printSsData invalid13.csv
+printSsData invalid14.csv
+printSsData invalid15.csv
+printSsData invalid16.csv
+printSsData invalid17.csv
+printFilteredSsData sunspots_data.csv a
+printFilteredSsData sunspots_data.csv -1
+printSsPeriod sunspots_data.csv 48
+printSsPeriod sunspots_data.csv b
+
+#success
+printSsData sunspots_data.csv
+printFilteredSsData sunspots_small.csv 1
+printFilteredSsData sunspots_data.csv 71
+printSsPeriod sunspots_data.csv 79
+printSsData valid0000.csv

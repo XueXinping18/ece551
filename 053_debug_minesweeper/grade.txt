@@ -1,0 +1,23 @@
+Grading at 10/02/2023:19:39:08.953895
+For commit ID fa9b82d7b32082cd6a52d4e6bc8ca2d620e2fef8
+Grading at Mon Oct  2 03:39:04 PM EDT 2023
+Attempting to compile minesweeper.c
+make: 'minesweeper' is up to date.
+#################################################
+Test case 1:
+Your output is correct
+Valgrind was clean
+#################################################
+Test case 2:
+Your output is correct
+Valgrind was clean
+#################################################
+Test case 3:
+Your output is correct
+Valgrind was clean
+#################################################
+Test case 4:
+Your output is correct
+Valgrind was clean
+
+Overall Grade: A
