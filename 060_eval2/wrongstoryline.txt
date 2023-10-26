@@ -1,0 +1,3 @@
+The first line is not used.
+The second line is valid with _animal_ is _animal_.
+once upon a time, there is a _animal_ who eats _animal.

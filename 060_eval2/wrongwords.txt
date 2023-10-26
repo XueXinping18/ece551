@@ -1,0 +1,6 @@
+:
+animal:walrus
+animal:dog
+adjective:peculiar
+adjective:scary
+adjective:peaceful
