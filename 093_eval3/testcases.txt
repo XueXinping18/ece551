@@ -1,0 +1,37 @@
+cyoa-step1 testcases/story1
+cyoa-step1 testcases/story1-incorrect1
+cyoa-step1 testcases/story1-incorrect2
+cyoa-step1 testcases/story1-incorrect3
+cyoa-step1 testcases/story1-incorrect4
+cyoa-step1 testcases/story1-incorrect5
+cyoa-step1 testcases/story1-incorrect6
+cyoa-step1 testcases/story1-incorrect7
+cyoa-step1 testcases/story1-incorrect8
+cyoa-step1 testcases/story1-incorrect9
+cyoa-step1 testcases/story1-correct1
+cyoa-step1 testcases/story1-correct2
+cyoa-step1 garbage
+cyoa-step2 testcases/story1 < input-step2.txt
+cyoa-step2 testcases/story2 < input-step2.txt
+cyoa-step2 testcases/incorrect-step2-1 < input-step2.txt
+cyoa-step2 testcases/incorrect-step2-2 < input-step2.txt
+cyoa-step2 testcases/incorrect-step2-3 < input-step2.txt
+cyoa-step2 testcases/story1-incorrect2 < input-step2.txt
+cyoa-step2 testcases/story1-incorrect3 < input-step2.txt
+cyoa-step2 testcases/story1-incorrect4 < input-step2.txt
+cyoa-step2 testcases/story1 < input-step2-2.txt
+cyoa-step2 testcases/story1 < empty-input.txt
+cyoa-step2 testcases/story1 < short-input.txt
+cyoa-step3 testcases/story1
+cyoa-step3 testcases/story2
+cyoa-step3 testcases/story3
+cyoa-step3 testcases/unwinnablestory
+cyoa-step4 testcases/story3-incorrect1 < testcases/story3/inputs/input3.txt
+cyoa-step4 testcases/story3-incorrect2 < testcases/story3/inputs/input3.txt
+cyoa-step4 testcases/story3-incorrect3 < testcases/story3/inputs/input3.txt
+cyoa-step4 testcases/story3-incorrect4 < testcases/story3/inputs/input3.txt
+cyoa-step4 testcases/story3-incorrect5 < testcases/story3/inputs/input3.txt
+ec:step1
+ec:step2
+ec:step3
+ec:step4

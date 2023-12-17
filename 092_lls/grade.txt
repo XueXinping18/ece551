@@ -1,0 +1,23 @@
+Grading at 11/24/2023:04:02:26.106168
+For commit ID 8cdf56f7d07c24318f4fe025780c4bd8043b3257
+Grading at Thu Nov 23 11:02:22 PM EST 2023
+-----------------------------------------------
+testcase 1 : Testing with LinkedList<int>
+...compiling...
+The code compiled.
+Your file matched the expected output
+Testcase passed 
+-----------------------------------------------
+testcase 2 : Testing with LinkedList<std::string>
+...compiling...
+The code compiled.
+Your file matched the expected output
+Testcase passed 
+-----------------------------------------------
+testcase 3 : Testing with LinkedList<(a custom class we wrote)>
+...compiling...
+The code compiled.
+Your file matched the expected output
+Testcase passed 
+
+Overall Grade: A

@@ -1,6 +1,7 @@
-:
 animal:walrus
-animal:dog
-adjective:peculiar
+animal:dog::
+animal: 
+adjective:pec:uliar
 adjective:scary
 adjective:peaceful
+place:meme

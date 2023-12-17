@@ -55,11 +55,11 @@ void updateCache(char * word, category_t * cache) {
 */
 void removeAndFreeWordFromCatarray(char * word, char * categoryName, catarray_t * cats) {
   // it is guaranteed that the category is inside the catarray and the exactly same word pointer is inside the category
-  for (int i = 0; i < cats->n; i++) {
+  for (size_t i = 0; i < cats->n; i++) {
     // Find the category by matching names
     if (strcmp(cats->arr[i].name, categoryName) == 0) {
       char ** words = cats->arr[i].words;
-      for (int j = 0; j < cats->arr[i].n_words; j++) {
+      for (size_t j = 0; j < cats->arr[i].n_words; j++) {
         // Find the word to be removed by matching pointers
         if (word == words[j]) {
           // Remove by swapping with the last element
@@ -129,6 +129,7 @@ char * translateLine(char * line, catarray_t * cats, category_t * cache, int isR
   }
   return newLine;
 }
+/*Obtain the category according to the name, create one if non exists*/
 category_t * computeCategoryIfAbsent(catarray_t * cats, char * key) {
   for (size_t i = 0; i < cats->n; i++) {
     if (strcmp(cats->arr[i].name, key) == 0) {
@@ -149,16 +150,16 @@ void addWordIntoCategory(category_t * cat, char * val) {
   cat->words[cat->n_words] = strdup(val);
   cat->n_words++;
 }
-/* parse a line in word file and add it into a catarray*/
+/* parse a line in words file and add it into a catarray*/
 int parseLineIntoCatarray(char * line, catarray_t * cats) {
-  int numColons = 0;
   char * pr = line;
   char * val = line;
+  int colonFound = 0;
   while (*pr != '\0') {
-    if (*pr == ':') {
-      numColons++;
+    if (*pr == ':' && !colonFound) {
       val = pr + 1;
       *pr = '\0';
+      colonFound = 1;
     }
     else if (*pr == '\n') {
       /*The input line is guaranteed to have a \n in the end*/
@@ -166,7 +167,7 @@ int parseLineIntoCatarray(char * line, catarray_t * cats) {
     }
     pr++;
   }
-  if (numColons != 1) {
+  if (colonFound == 0) {
     return 1;  //error
   }
   // fetch category from catarray by key

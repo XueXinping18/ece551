@@ -3,3 +3,11 @@ story-step2 words.txt
 story-step3 words.txt story2.txt
 story-step4 words.txt story2.txt
 story-step4 -n words.txt story2.txt
+story-step1 empty.txt
+story-step2 empty.txt
+story-step3 empty.txt story2.txt
+story-step3 empty.txt empty.txt
+story-step4 wrongwords.txt story2.txt
+story-step4 -n empty.txt empty.txt
+story-step4 -n fake story2.txt
+story-step4 empty story2.txt
